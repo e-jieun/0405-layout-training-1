@@ -22,6 +22,9 @@ $per100: 100%;
 @mixin border($px, $color) {
   border: $px solid $color;
 }
+@mixin linear-gra($direction, $color, $color) {
+  background: linear-gradient($direction, $color, $color);  
+}
 //style
 // https://developer.mozilla.org/ko/docs/Web/CSS/gradient
 #root{
@@ -112,6 +115,7 @@ $per100: 100%;
             height: 30vw;
             background-color: $color-c4;
             border-radius: $per100;
+            @include linear-gra(to right, black, #fff);
             @include flex-align-justify(center, flex-end);
             position: relative;
             right: 5vw;

@@ -138,6 +138,8 @@
   height: 30vw;
   background-color: #c4c4c4;
   border-radius: 100%;
+  background: -webkit-gradient(linear, left top, right top, from(black), to(#fff));
+  background: linear-gradient(to right, black, #fff);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
